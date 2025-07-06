@@ -56,11 +56,13 @@ html, body {
 /* Main content area that pushes footer down */
 .main-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Login section within main content */
 .login-section {
-  min-height: calc(100vh - 120px); /* Full height minus header space */
+  height: calc(100vh - 65px); /* Full height minus header space */
   display: flex;
   justify-content: center;
   align-items: center;
