@@ -1,0 +1,24 @@
+<div class="login">
+  <div class="login-card">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">Benutzername</label>
+        <input id="username" type="text" formControlName="username" />
+        <small *ngIf="submitted && loginForm.controls['username'].invalid" class="error">
+          Benutzername erforderlich
+        </small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Passwort</label>
+        <input id="password" type="password" formControlName="password" />
+        <small *ngIf="submitted && loginForm.controls['password'].invalid" class="error">
+          Passwort erforderlich
+        </small>
+      </div>
+
+      <button type="submit">Anmelden</button>
+    </form>
+  </div>
+</div>
