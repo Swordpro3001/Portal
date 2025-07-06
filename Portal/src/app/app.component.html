@@ -1,10 +1,14 @@
 <div class="app-wrapper">
+  <app-loading-spinner></app-loading-spinner>
   <header>
       <app-header></app-header>
   </header>
 
-  <app-login></app-login>
+
   <main class="main-content">
+    <div class="login-section">
+      <app-login></app-login>
+    </div>
     <router-outlet></router-outlet>
   </main>
   <footer>

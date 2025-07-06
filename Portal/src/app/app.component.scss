@@ -48,18 +48,25 @@ html, body {
 }
 
 .app-wrapper {
-  min-height: 100vh; /* 100% der Bildschirmhöhe */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* Main content area that pushes footer down */
 .main-content {
-  flex: 1; /* nimmt den restlichen Platz ein */
+  flex: 1;
 }
 
-
-.login {
+/* Login section within main content */
+.login-section {
+  min-height: calc(100vh - 120px); /* Full height minus header space */
   display: flex;
   justify-content: center;
+  align-items: center;
+}
 
+/* Footer positioning */
+footer {
+  margin-top: auto; /* Pushes footer to bottom */
 }
