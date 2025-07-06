@@ -16,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     LoginComponent,
     LoadingSpinnerComponent,
-    LoginComponent
+    LoginComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +25,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    FooterComponent,
+    HeaderComponent,
+    LoginComponent,
+    LoadingSpinnerComponent
+  ]
 })
 export class AppModule { }
